@@ -556,38 +556,37 @@ cursor: pointer;
 }
 
 .skills__html{
-  width: 90%;
+  width: 80%;
 }
 .skills__css{
-  width: 80%;
+  width: 48%;
 }
 .skills__js{
-  width: 60%;
+  width: 40%;
 }
-.skills__react{
-  width: 80%;
+.skills__bootstrap{
+  width: 40%;
 }
+
 .skills__php{
   width: 80%;
 }
-.skills__node{
+.skills__java{
   width: 70%;
 }
-.skills__firebase{
-  width: 90%;
+.skills__mysql{
+  width: 70%;
 }
 .skills__python{
-  width: 50%;
+  width: 30%;
 }
-.skills__figma{
+.skills__git{
   width: 90%;
 }
-.skills__sketch{
-  width: 85%;
-}
-.skills__photoshop{
+.skills__canva{
   width: 80%;
 }
+
 
 .skills__close .skills__list{
   height: 0;
