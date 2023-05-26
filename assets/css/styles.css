@@ -281,10 +281,28 @@ img {
   bottom: 0;
 }
 
+.nav__item{
+  position: relative;
+ 
+}
+
 /* Active link */
 .active-link{
   color: var(--first-color);
+  
+  
+  
 }
+
+.active-link::before{
+  content: ' ';
+  position: absolute;
+  bottom: -0.2rem;
+  border-radius: 50%;
+  border: 2px solid var(--first-color);
+}
+
+
 
 /* Change background header */
 .scroll-header{
