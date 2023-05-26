@@ -54,6 +54,13 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+
+    /* Button colors */
+    --button-color1:rgba(255,255,255,.5);
+    --button-color2:rgba(116, 125, 136, .5);
+    --button-color3:rgba(255,255,255,.2);
+    --button-color4:rgba(0, 0, 0, .4);
 }
 
 /* Font size for large devices */
@@ -82,7 +89,27 @@ body.dark-theme{
    --container-color: hsl(var(--hue-color), 29%, 16%);
    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+
+   /* Button Colors */
+   --button-color1:rgba(76, 74, 74, 0.5);
+   --button-color2:rgba(106, 127, 154, 0.5);
+   --button-color3:rgba(255,255,255,.2);
+   --button-color4:rgba(0, 0, 0, .4);
+
+
+   
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*========== Button Dark/Light ==========*/
 .nav__btns{
@@ -411,6 +438,15 @@ img {
   font-weight: var(--font-medium);
 }
 
+/* For light theme */
+.button{
+  box-shadow:  4px 4px 6px 0 var(--button-color1),
+  -4px -4px 6px 0 var(--button-color2), 
+inset -4px -4px 6px 0 var(--button-color3),
+inset 4px 4px 6px 0 var(--button-color4);
+
+}
+
 
 .button:hover{
   background-color: var(--first-color-alt);
@@ -448,6 +484,7 @@ img {
 .button--link{
   padding: 0;
   background-color: transparent;
+  /* color: red; */
   color: var(--first-color);
 }
 
@@ -1083,7 +1120,7 @@ cursor: pointer;
   right: 1rem;
   bottom: -20%;
   background-color: var(--first-color);
-  padding: 0 .3rem;
+  padding: 0.3rem;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -1457,3 +1494,5 @@ cursor: pointer;
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
