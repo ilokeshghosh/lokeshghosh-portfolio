@@ -180,3 +180,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+window.addEventListener('load', function () {
+    // When the page finishes loading, hide the loader
+    var loader = document.getElementById('loader-container');
+    loader.style.display = 'none';
+  });
+
+
+ 
