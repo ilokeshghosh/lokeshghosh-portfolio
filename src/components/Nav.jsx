@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-import { PiUserList, BiHome, BsCodeSlash, BsChatLeftText, GoProjectRoadmap, FiGrid } from '../Logos/index.logos'
+import { PiUserList, BiHome, BsCodeSlash, BsChatLeftText, GoProjectRoadmap, FiGrid, LiaBookSolid } from '../Logos/index.logos'
 
 export default function Nav() {
 
@@ -23,6 +23,14 @@ export default function Nav() {
                 <PiUserList />
             </NavLink>
 
+            {/* Education */}
+            <NavLink
+                to='/educations'
+                className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
+            >
+                <LiaBookSolid />
+            </NavLink>
+
             {/* skill */}
             <NavLink
                 to='/skills'
@@ -32,12 +40,12 @@ export default function Nav() {
             </NavLink>
 
             {/* specializations */}
-            <NavLink
+            {/* <NavLink
                 to='/specializations'
                 className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
             >
                 <GoProjectRoadmap />
-            </NavLink>
+            </NavLink> */}
 
             {/* project */}
             <NavLink

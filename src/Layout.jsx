@@ -10,9 +10,9 @@ function Layout() {
             </div>
 
             {/* outlet wrapper */}
-            <div className="flex justify-center items-start  gap-10 h-full px-4 py-[6rem]  rounded text-white w-[78%] ">
+            <div className="flex justify-center items-start   gap-10 h-full px-4 py-[4rem]  rounded text-white w-[78%] ">
                 {/* outlet */}
-                <div className="w-[90%] flex ">
+                <div className="w-[90%] flex py-[1rem]">
                     <Outlet />
                 </div>
 

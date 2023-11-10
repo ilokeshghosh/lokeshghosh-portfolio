@@ -5,7 +5,7 @@ export default function Card() {
         // card content
         <div className="w-full flex flex-col justify-center items-center gap-3 py-2 px-5">
             {/* name */}
-            <h2 className="w-full text-center text-2xl font-semibold">Lokesh Ghosh</h2>
+            <h2 className="w-full  text-2xl font-semibold"> <span className='text-orange-600'>L</span>okesh <span className='text-orange-600'>G</span>hosh</h2>
 
             {/* image */}
             <img className=" w-full rounded-lg" src="https://raw.githubusercontent.com/ilokeshghosh/RESOURCE_WAREHOUSE/main/profile%20images/out..jpg" alt="profile image" />
