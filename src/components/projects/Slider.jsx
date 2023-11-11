@@ -1,10 +1,13 @@
 import { Fragment, useState } from "react"
 import { SliderData } from "./data"
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import {IoIosArrowBack,IoIosArrowForward} from '../../Logos/index.logos'
 export default function Slider({ slides }) {
+    console.log(slides)
     const [current, setCurrent] = useState(0)
     const length = slides.length
+    console.log(length);
     const nextSlide = () => {
+      
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
 
@@ -17,21 +20,21 @@ export default function Slider({ slides }) {
     }
 
     return (
-        <div className="w-[60%]   relative">
-            <FaArrowAltCircleLeft className='left-arrow absolute z-10 border top-1/2 left-0' onClick={prevSlide} />
-            <FaArrowAltCircleRight className='right-arrow absolute z-10 border top-1/2 right-0' onClick={nextSlide} />
-            {SliderData.map((slide, index) => {
+        <div className="w-[90%] relative">
+            <IoIosArrowBack className='absolute text-4xl cursor-pointer z-10 text-slate-300  top-[60%] left-0' onClick={prevSlide} />
+            <IoIosArrowForward className=' absolute text-4xl cursor-pointer z-10  top-[60%] text-slate-300 right-0' onClick={nextSlide} />
+            {slides.map((slide, index) => {
                 return (
-                    <Fragment key={index}>
+                    <div key={index}>
                         {index === current && (
                             // slider content
-                            <div className="w-full flex flex-col justify-center items-start gap-2">
-                                <h3 className="text-3xl font-semibold ">test project title</h3>
-                                <h4 className="text-xl font-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, aliquid! Minus eius, illo culpa </h4>
-                                <img src={slide.image} alt='travel image' className='image w-full h-[400px]' />
+                            <div className="w-full flex flex-col justify-center item-center  gap-2">
+                                <h3 className="text-3xl font-semibold">{slide.title}</h3>
+                                <h4 className="text-xl font-base text-slate-500">{slide.desc}</h4>
+                                <img src={slide.image} alt='travel image' className='image w-full border border-slate-500 rounded-lg max-h-[50vh] h-auto' />
                             </div>
                         )}
-                    </Fragment>
+                    </div>
                 );
             })}
         </div>
