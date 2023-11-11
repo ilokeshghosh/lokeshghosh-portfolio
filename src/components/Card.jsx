@@ -1,3 +1,4 @@
+import { Contact } from ".";
 import {
   BiLogoInstagramAlt,
   BsLinkedin,
@@ -5,6 +6,7 @@ import {
   BsFacebook,
 } from "../Logos/index.logos";
 import { Link } from "react-router-dom";
+
 export default function Card() {
   return (
     // card content
@@ -33,24 +35,27 @@ export default function Card() {
 
       {/* social logos */}
       <div className="flex w-full justify-between items-center text-[30px]">
-        <Link to="https://reactrouter.com/en/main/components/link">
+        <Link to="https://www.linkedin.com/in/ilokeshghosh/">
           <BsLinkedin />
         </Link>
-        <Link to="https://reactrouter.com/en/main/components/link">
+        <Link to="https://github.com/ilokeshghosh">
           <BsGithub />
         </Link>
-        <Link to="https://reactrouter.com/en/main/components/link">
+        <Link to="https://www.instagram.com/i_lokeshghosh/">
           <BiLogoInstagramAlt />
         </Link>
-        <Link to="https://reactrouter.com/en/main/components/link">
+        <Link to="https://www.facebook.com/ilokeshghosh/">
           <BsFacebook />
         </Link>
       </div>
 
       {/* hire me button */}
-      <button className="px-4 py-2 bg-orange-500 border-2 border-orange-500 hover:bg-transparent hover:text-white text-black font-bold text-lg w-full rounded-lg my-4">
+      <Link
+        to="/contact"
+        className="px-4 py-2 bg-orange-500 border-2 text-center border-orange-500 hover:bg-transparent hover:text-white text-black font-bold text-lg w-full rounded-lg my-4"
+      >
         HIRE ME!
-      </button>
+      </Link>
     </div>
   );
 }

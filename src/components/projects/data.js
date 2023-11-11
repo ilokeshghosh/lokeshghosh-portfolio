@@ -1,18 +1,21 @@
 const SliderData = [
     {
-        title: 'Title 1',
-        desc:'This is desc 1',
-        image: 'https://images.unsplash.com/photo-1598449356475-b9f71db7d847?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title: 'JavaScript 30',
+        desc:'Mastering JS Skills By Doing One Project at a Time and Elevating Web Wizardry 🧙‍♂️🪄',
+        image: 'https://raw.githubusercontent.com/ilokeshghosh/RESOURCE_WAREHOUSE/main/project-image/js30.png',
+        url:'https://ilokeshghosh.github.io/javascript-30/index%20page/dist/'
     },
     {
-        title: 'Title 2',
-        desc:'This is desc 2',
-        image: 'https://images.unsplash.com/photo-1598449356475-b9f71db7d847?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title: 'Personal JavaScript Projects 🏗',
+        desc:'Practicing JavaScript and Building Project',
+        image: 'https://raw.githubusercontent.com/ilokeshghosh/RESOURCE_WAREHOUSE/main/project-image/personal-js-projects.png',
+        url:'https://ilokeshghosh.github.io/javaScript-personal-projects/indexpage/dist/'
     },
     {
-        title: 'Title 3',
-        desc:'This is desc 3',
-        image: 'https://images.unsplash.com/photo-1598449356475-b9f71db7d847?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title: 'To-Do Application using React',
+        desc:'A deployed react project by using redux tool kit',
+        image: 'https://raw.githubusercontent.com/ilokeshghosh/RESOURCE_WAREHOUSE/main/project-image/react-todo-application.png',
+        url:'https://lokesh-react-todo-project.netlify.app/'
     }
 ]
 

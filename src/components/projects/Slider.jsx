@@ -1,11 +1,10 @@
 import { Fragment, useState } from "react"
 import { SliderData } from "./data"
-import {IoIosArrowBack,IoIosArrowForward} from '../../Logos/index.logos'
+import {IoIosArrowBack,IoIosArrowForward,VscLiveShare} from '../../Logos/index.logos'
+import { Link } from "react-router-dom"
 export default function Slider({ slides }) {
-    console.log(slides)
     const [current, setCurrent] = useState(0)
     const length = slides.length
-    console.log(length);
     const nextSlide = () => {
       
         setCurrent(current === length - 1 ? 0 : current + 1)
@@ -28,8 +27,11 @@ export default function Slider({ slides }) {
                     <div key={index}>
                         {index === current && (
                             // slider content
-                            <div className="w-full flex flex-col justify-center item-center  gap-2">
+                            <div className="w-full flex flex-col justify-center item-center  gap-2 mt-1">
+                                <div className="flex justify-start items-center gap-2">
                                 <h3 className="text-3xl font-semibold">{slide.title}</h3>
+                                <Link className="text-orange-500 text-2xl" to={slide.url} target="_blank"><VscLiveShare/></Link>
+                                </div>
                                 <h4 className="text-xl font-base text-slate-500">{slide.desc}</h4>
                                 <img src={slide.image} alt='travel image' className='image w-full border border-slate-500 rounded-lg max-h-[50vh] h-auto' />
                             </div>
