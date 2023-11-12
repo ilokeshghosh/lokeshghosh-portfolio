@@ -9,10 +9,10 @@ export default function About() {
             <div className="w-full flex flex-col items-center justify-between gap-8">
 
                 {/* content head */}
-                <h3 className="text-4xl font-bold w-full">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
+                <h3 className="text-4xl font-bold w-full">Passionate FullStack Developer from Kolkata, India</h3>
 
                 {/* content text */}
-                <h4 className="text-slate-400 text-xl font-bold w-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam earum dolores id quaerat sit consectetur eum dolorum neque vero nam.</h4>
+                <h4 className="text-slate-400 text-xl font-bold w-full"> Hello, I'm Lokesh Ghosh, a recent graduate with a Bachelor's in Computer Application. I'm currently immersed in learning React and MongoDB to expand my skills as a FullStack Developer. My journey in web development is fueled by a curiosity to create seamless and innovative digital experiences.</h4>
             </div>
         </div>
     )
