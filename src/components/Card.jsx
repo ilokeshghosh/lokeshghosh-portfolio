@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default function Card() {
   return (
     // card content
-    <div className="w-full flex flex-col justify-center items-center gap-3 py-2 px-5">
+    <div className="w-full hidden rounded-lg md:flex flex-col border border-slate-600 justify-center items-center gap-3 py-2 px-5">
       {/* name */}
       <h2 className="w-full  text-2xl font-semibold">
         {" "}

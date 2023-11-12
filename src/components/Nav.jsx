@@ -5,7 +5,7 @@ import { PiUserList, BiHome, BsCodeSlash, BsChatLeftText, GoProjectRoadmap, FiGr
 export default function Nav() {
 
     return (
-        <div className="w-full flex flex-col items-center justify-evenly gap-10 py-6">
+        <div className="w-full flex md:flex-col items-center justify-evenly gap-10 py-6">
 
             {/* home */}
             <NavLink
