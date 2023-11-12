@@ -3,7 +3,7 @@ export default function Skills() {
     return (
         <div className="md:w-[80%] w-full  flex flex-col justify-start gap-14 py-4 ">
             {/* heading */}
-            <div className="md:text-5xl text-4xl font-bold flex gap-4 w-full"><h3>My</h3><h3 className="text-orange-600">Skills</h3></div>
+            <div className="md:text-5xl text-4xl  font-bold items-center justify-center md:justify-start flex gap-4 w-full"><h3>My</h3><h3 className="text-orange-600">Skills</h3></div>
 
             {/* content container*/}
             <div className="w-full flex flex-wrap  items-center justify-evenly md:gap-2 gap-3 ">

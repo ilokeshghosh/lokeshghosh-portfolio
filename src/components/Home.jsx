@@ -2,7 +2,7 @@ export default function Home() {
     return (
         <div className="md:w-[80%] w-full flex flex-col justify-start gap-14 py-4">
             {/* heading */}
-            <div className="md:text-5xl text-4xl font-semibold flex flex-col gap-2 w-full"> <h3>Hello, I am <span className="text-orange-600">from Kolkata, India</span></h3>
+            <div className="md:text-5xl text-4xl flex-wrap font-semibold flex flex-col gap-2 w-full"> <h3>Hello, I am <span className="text-orange-600">from Kolkata, India</span></h3>
                 <h3>FullStack Software Developer</h3>
             </div>
 

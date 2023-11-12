@@ -3,7 +3,7 @@ export default function About() {
     return (
         <div className="md:w-[80%] w-full flex flex-col justify-start md:gap-14 gap-8 py-4 ">
             {/* heading */}
-            <div className="md:text-5xl text-4xl font-bold flex gap-4 w-full"><h3>About</h3><h3 className="text-orange-600">Me</h3></div>
+            <div className="md:text-5xl text-4xl justify-center md:justify-start font-bold flex gap-4 w-full"><h3>About</h3><h3 className="text-orange-600">Me</h3></div>
 
             {/* content container*/}
             <div className="w-full flex flex-col items-center justify-between gap-8">

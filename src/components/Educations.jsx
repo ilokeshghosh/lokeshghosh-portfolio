@@ -2,7 +2,7 @@ export default function Educations() {
     return (
         <div className="md:w-[80%] w-full flex flex-col justify-start gap-14 py-4 ">
             {/* heading */}
-            <div className="flex-wrap  md:text-5xl text-4xl font-bold flex gap-4 w-full "><h3>Education &</h3><h3 className="text-orange-600">Experience</h3></div>
+            <div className="flex-wrap justify-center md:justify-start  md:text-5xl text-4xl font-bold flex gap-4 w-full "><h3>Education &</h3><h3 className="text-orange-600">Experience</h3></div>
 
             {/* content container*/}
             <div className="w-full flex flex-col items-start justify-between gap-4  px-4">
