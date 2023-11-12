@@ -15,24 +15,24 @@ export default function Skills() {
                 </div>
 
                  {/* content 2 */}
-                 <div className='border rounded-full md:py-8 py-6 px-6 border-orange-500 flex flex-col md:gap-7 gap-5 justify-center items-center'>
+                 <div className='border rounded-full md:py-8 py-6 px-6  flex flex-col md:gap-7 gap-5 justify-center items-center'>
                     <IoLogoJavascript className='text-yellow-400 md:text-7xl text-5xl' />
                     <h3 className='font-semibold text-orange-500'>40%</h3>
                 </div>
 
                  {/* content 3 */}
-                 <div className='border rounded-full md:py-8 py-6 px-6 border-orange-500 flex flex-col md:gap-7 gap-5 justify-center items-center'>
+                 <div className='border rounded-full md:py-8 py-6 px-6  flex flex-col md:gap-7 gap-5 justify-center items-center'>
                     <SiTailwindcss className='text-cyan-400 md:text-7xl text-5xl' />
                     <h3 className='font-semibold text-orange-500'>50%</h3>
                 </div>
 
                  {/* content 4 */}
-                 <div className='border rounded-full md:py-8 py-6 px-6 border-orange-500 flex flex-col md:gap-7 gap-5 justify-center items-center'>
+                 <div className='border rounded-full md:py-8 py-6 px-6  flex flex-col md:gap-7 gap-5 justify-center items-center'>
                     <BsGit className='text-orange-600 md:text-7xl text-5xl' />
                     <h3 className='font-semibold text-orange-500'>40%</h3>
                 </div>
                  {/* content 5 */}
-                 <div className='border rounded-full md:py-8 py-6 px-6 border-orange-500 flex flex-col md:gap-7 gap-5 justify-center items-center'>
+                 <div className='border rounded-full md:py-8 py-6 px-6  flex flex-col md:gap-7 gap-5 justify-center items-center'>
                     <BiLogoMongodb className='text-green-600 md:text-7xl text-5xl' />
                     <h3 className='font-semibold text-orange-500'>40%</h3>
                 </div>
