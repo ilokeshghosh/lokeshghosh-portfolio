@@ -30,7 +30,7 @@ export default function Card() {
         {/* location */}
         <h2 className="text-xl font-semibold">Kolkata, India</h2>
         {/* role / description */}
-        <h3 className="text-lg text-slate-500">Software Engineer</h3>
+        <h3 className="text-lg text-slate-300">Software Engineer</h3>
       </div>
 
       {/* social logos */}

@@ -39,21 +39,33 @@ function Layout() {
             {/* location */}
             <h2 className="text-xl font-semibold">Kolkata, India</h2>
             {/* role / description */}
-            <h3 className="text-lg text-slate-500">Software Engineer</h3>
+            <h3 className="text-lg text-slate-300">Software Engineer</h3>
           </div>
 
           {/* social logos */}
           <div className="flex w-full gap-5 justify-between items-center text-[30px]">
-            <Link to="https://www.linkedin.com/in/ilokeshghosh/">
+            <Link 
+            to="https://www.linkedin.com/in/ilokeshghosh/"
+            aria-label='linkedInLink'
+            >
               <BsLinkedin />
             </Link>
-            <Link to="https://github.com/ilokeshghosh">
+            <Link 
+            to="https://github.com/ilokeshghosh"
+            aria-label='gitHubLink'
+            >
               <BsGithub />
             </Link>
-            <Link to="https://www.instagram.com/i_lokeshghosh/">
+            <Link 
+            to="https://www.instagram.com/i_lokeshghosh/"
+            aria-label='instagramLink'
+            >
               <BiLogoInstagramAlt />
             </Link>
-            <Link to="https://www.facebook.com/ilokeshghosh/">
+            <Link 
+            to="https://www.facebook.com/ilokeshghosh/"
+            aria-label='facebookLink'
+            >
               <BsFacebook />
             </Link>
           </div>
