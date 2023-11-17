@@ -11,7 +11,7 @@ export default function Nav() {
             <NavLink
                 to='/'
                 className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
-                name='home'
+                aria-label="home"
             >
                 <BiHome />
             </NavLink>
@@ -20,7 +20,7 @@ export default function Nav() {
             <NavLink
                 to='/about'
                 className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
-                name='about'
+                aria-label='about'
             >
                 <PiUserList />
             </NavLink>
@@ -29,7 +29,7 @@ export default function Nav() {
             <NavLink
                 to='/educations'
                 className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
-                name='educations'
+                aria-label='educations'
             >
                 <LiaBookSolid />
             </NavLink>
@@ -38,7 +38,7 @@ export default function Nav() {
             <NavLink
                 to='/skills'
                 className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
-                name='skills'
+                aria-label='skills'
             >
                 <BsCodeSlash />
             </NavLink>
@@ -55,7 +55,7 @@ export default function Nav() {
             <NavLink
                 to='/projects'
                 className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
-                name='projects'
+                aria-label='projects'
             >
                 <FiGrid />
             </NavLink>
@@ -64,7 +64,7 @@ export default function Nav() {
             <NavLink
                 to='/contact'
                 className={({ isActive }) => `text-2xl duration-300 transition-transform font-bold ${isActive ? 'text-orange-600 scale-[1.3]' : 'text-white'}`}
-                name='contact'
+                aria-label='contact'
             >
                 <BsChatLeftText />
             </NavLink>

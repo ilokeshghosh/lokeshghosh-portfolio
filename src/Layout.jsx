@@ -63,7 +63,7 @@ function Layout() {
           className="cursor-pointer flex items-start justify-center"
           onMouseEnter={handleCard}
           onMouseLeave={handleCard}
-          name='profile-button'
+          aria-label='profileButton'
         >
           <img
             className="w-[50px] h-auto border border-slate-400 rounded-full "
