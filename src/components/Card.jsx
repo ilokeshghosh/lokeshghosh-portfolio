@@ -20,8 +20,8 @@ export default function Card() {
 
       {/* image */}
       <img
-        className=" w-full rounded-lg"
-        src="https://raw.githubusercontent.com/ilokeshghosh/RESOURCE_WAREHOUSE/main/profile%20images/out..jpg"
+        className=" w-full h-[100%] rounded-lg"
+        src="https://ik.imagekit.io/8fgpvoiai/profile/out._Vt6Gk9Ia-p.jpg?updatedAt=1700229684772"
         alt="profile image"
       />
 

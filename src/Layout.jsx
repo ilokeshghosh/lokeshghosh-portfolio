@@ -63,10 +63,11 @@ function Layout() {
           className="cursor-pointer flex items-start justify-center"
           onMouseEnter={handleCard}
           onMouseLeave={handleCard}
+          name='profile-button'
         >
           <img
-            className="w-[50px] border rounded-full  "
-            src="https://raw.githubusercontent.com/ilokeshghosh/RESOURCE_WAREHOUSE/main/profile%20images/out..jpg"
+            className="w-[50px] h-auto border border-slate-400 rounded-full "
+            src="https://ik.imagekit.io/8fgpvoiai/profile/out.-removebg-preview_qWWF-CyHP.png?updatedAt=1700229683095"
             alt=""
           />
         </button>
