@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { Card, Nav } from "./components/index";
+import { Card, Nav,NewCard } from "./components/index";
 import { useState } from "react";
 import {
   BiLogoInstagramAlt,
@@ -18,11 +18,14 @@ function Layout() {
     <div className=" rounded-lg  h-screen w-screen flex justify-between items-center px-4">
       {/* card wrapper */}
       <div className="hidden md:inline-block  text-white w-[20%]">
-        <Card />
+        {/* old card */}
+        {/* <Card /> */}
+
+        {/* new card */}
+        <NewCard/>
       </div>
 
-
-    {/* card for small device */}
+      {/* card for small device */}
       <div
         className={` ${
           isCardActive ? `border backdrop-blur-2xl` : `w-[100px] `
@@ -44,27 +47,24 @@ function Layout() {
 
           {/* social logos */}
           <div className="flex w-full gap-5 justify-between items-center text-[30px]">
-            <Link 
-            to="https://www.linkedin.com/in/ilokeshghosh/"
-            aria-label='linkedInLink'
+            <Link
+              to="https://www.linkedin.com/in/ilokeshghosh/"
+              aria-label="linkedInLink"
             >
               <BsLinkedin />
             </Link>
-            <Link 
-            to="https://github.com/ilokeshghosh"
-            aria-label='gitHubLink'
-            >
+            <Link to="https://github.com/ilokeshghosh" aria-label="gitHubLink">
               <BsGithub />
             </Link>
-            <Link 
-            to="https://www.instagram.com/i_lokeshghosh/"
-            aria-label='instagramLink'
+            <Link
+              to="https://www.instagram.com/i_lokeshghosh/"
+              aria-label="instagramLink"
             >
               <BiLogoInstagramAlt />
             </Link>
-            <Link 
-            to="https://www.facebook.com/ilokeshghosh/"
-            aria-label='facebookLink'
+            <Link
+              to="https://www.facebook.com/ilokeshghosh/"
+              aria-label="facebookLink"
             >
               <BsFacebook />
             </Link>
@@ -75,7 +75,7 @@ function Layout() {
           className="cursor-pointer flex items-start justify-center"
           onMouseEnter={handleCard}
           onMouseLeave={handleCard}
-          aria-label='profileButton'
+          aria-label="profileButton"
         >
           <img
             className="w-[50px] h-auto border border-slate-400 rounded-full "
@@ -88,7 +88,7 @@ function Layout() {
       {/* outlet wrapper */}
       <div className="flex justify-center items-start   gap-10 h-full px-4 md:py-[4rem] py-[2rem]  rounded text-white md:w-[78%] w-full ">
         {/* outlet */}
-        <div className="md:w-[90%] w-full flex py-[1rem]">
+        <div className="md:w-[90%]  w-full flex py-[1rem] justify-center items-center">
           <Outlet />
         </div>
 

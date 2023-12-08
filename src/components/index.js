@@ -8,4 +8,5 @@ import Specializations from "./Specializations";
 import Projects from "./projects/Projects";
 import Contact from "./Contact";
 import Form from "./Form";
-export  {Card, Nav, About,Home, Skills, Educations, Projects, Specializations, Contact, Form}
+import NewCard from './NewCard'
+export  {Card, Nav, About,Home, Skills, Educations, Projects, Specializations, Contact, Form,NewCard}

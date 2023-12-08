@@ -1,0 +1,40 @@
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 0px 0px 13px 13px;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter:  blur(50px);
+  }
+  .container::after{
+    content:'';
+    position: absolute;
+  
+    /* size */
+    width: 90px;
+    height: 70px;
+    
+    /* center horizontaly */
+    right: 30%;
+    /* margin-left: -100px; */
+    
+    /* place verticaly */
+    top: -12px;
+
+      
+    border-radius: 50%; /* circle magic */
+    
+    z-index: -1;
+    /* background-color: white; */
+
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter:  blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
