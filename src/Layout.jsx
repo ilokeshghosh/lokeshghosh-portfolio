@@ -19,10 +19,10 @@ function Layout() {
       {/* card wrapper */}
       <div className="hidden md:inline-block  text-white w-[20%]">
         {/* old card */}
-        {/* <Card /> */}
+        <Card />
 
         {/* new card */}
-        <NewCard/>
+        {/* <NewCard/> */}
       </div>
 
       {/* card for small device */}
