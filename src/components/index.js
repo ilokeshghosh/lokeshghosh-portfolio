@@ -9,4 +9,6 @@ import Projects from "./projects/Projects";
 import Contact from "./Contact";
 import Form from "./Form";
 import NewCard from './NewCard'
-export  {Card, Nav, About,Home, Skills, Educations, Projects, Specializations, Contact, Form,NewCard}
+import ProjectLandingPage from "./ProjectLandingPage/ProjectLandingPage";
+import ProjectCard from "./ProjectLandingPage/ProjectCard";
+export { Card, Nav, About, Home, Skills, Educations, Projects, Specializations, Contact, Form, NewCard, ProjectLandingPage, ProjectCard }

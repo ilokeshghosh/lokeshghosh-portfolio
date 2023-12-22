@@ -15,7 +15,7 @@ function Layout() {
   }
   return (
     // wrapper
-    <div className=" rounded-lg  h-screen w-screen flex justify-between items-center px-4">
+    <div className=" bg-zinc-900  h-screen w-screen flex justify-between items-center px-4">
       {/* card wrapper */}
       <div className="hidden md:inline-block  text-white w-[20%]">
         {/* old card */}
