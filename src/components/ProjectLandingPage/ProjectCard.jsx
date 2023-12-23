@@ -24,9 +24,9 @@ export default function ProjectCard({
       />
 
       {/* right section */}
-      <div className={`flex   flex-col gap-2 lg:w-[90%] w-full lg:${className} items-center`}>
+      <div className={`flex   flex-col gap-2 lg:w-[90%] w-full lg:${className} lg:items-start items-center`}>
         {/* project title */}
-        <h2 className={`lg:text-4xl md:text-2xl text-xl text-center font-bold lg:${textAlign}`}>
+        <h2 className={`lg:text-4xl md:text-2xl text-xl text-center font-bold lg:text-start lg:${textAlign}`}>
           <Link className="w-full " to={projectUrl}>{title}</Link>
         </h2>
 
@@ -39,7 +39,7 @@ export default function ProjectCard({
         </div>
 
         {/* content */}
-        <div className={`lg:${textAlign}   text-center`}>{projectContent}</div>
+        <div className={`lg:${textAlign} lg:text-start   text-center`}>{projectContent}</div>
       </div>
     </div>
   );

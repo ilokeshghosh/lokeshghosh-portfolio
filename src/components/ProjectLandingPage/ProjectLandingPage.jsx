@@ -283,6 +283,7 @@ export default function ProjectLandingPage() {
 
             {/* project section */}
             <div className="py-10 flex flex-col flex-wrap lg:flex-nowrap gap-3 h-[90%]">
+              
               {/* project card 1 */}
               <div className="flex items-center lg:flex-row flex-col justify-center lg:w-[80%] sm:w-[60%] w-[80%] mx-auto lg:gap-20 gap-5 bg-white py-4 px-4 rounded-xl">
                 <img
