@@ -11,7 +11,8 @@ import {
   SiAppwrite,
   FaHtml5,
   FaCss3,
-  MdOutlineFolderSpecial,LuHome
+  MdOutlineFolderSpecial,
+  LuHome,
 } from "../../Logos/index.logos";
 
 import { ProjectCard } from "../";
@@ -49,8 +50,12 @@ export default function ProjectLandingPage() {
           >
             <li className="text-[#ea58a5]">
               {" "}
-              <Link className="lg:inline-block hidden" to={"/projects"}>Home</Link>
-              <Link to={"/projects"}  className="text-2xl lg:hidden"><LuHome/></Link>
+              <Link className="lg:inline-block hidden" to={"/projects"}>
+                Home
+              </Link>
+              <Link to={"/projects"} className="text-2xl lg:hidden">
+                <LuHome />
+              </Link>
             </li>
             <li>
               <a className="lg:inline-block hidden" href="#featuredProject">
@@ -127,7 +132,9 @@ export default function ProjectLandingPage() {
               </HashLink>
             </li>
             <li>
-              <a className="lg:inline-block hidden" href="#htmlCss">HTML + CSS</a>
+              <a className="lg:inline-block hidden" href="#htmlCss">
+                HTML + CSS
+              </a>
               <HashLink
                 smooth
                 onClick={(e) => {
@@ -142,14 +149,18 @@ export default function ProjectLandingPage() {
                 }}
                 to={"/project-landing-page#htmlCss"}
                 className={`transition-all lg:hidden duration-300 ease-linear ${
-                  hashLinkActive.htmlCss ? "text-[#e34c26] text-3xl" : "text-2xl"
+                  hashLinkActive.htmlCss
+                    ? "text-[#e34c26] text-3xl"
+                    : "text-2xl"
                 }`}
               >
                 <FaHtml5 />
               </HashLink>
             </li>
             <li>
-              <a className="lg:inline-block hidden" href="#figma">Figma</a>
+              <a className="lg:inline-block hidden" href="#figma">
+                Figma
+              </a>
               <HashLink
                 smooth
                 onClick={(e) => {
@@ -277,14 +288,56 @@ export default function ProjectLandingPage() {
           >
             {/* upper section */}
             <div className="flex flex-col justify-center items-center  w-full">
-              <h3 className="font-bold lg:text-start text-center text-lg w-[90%]">Featured Projects</h3>
+              <h3 className="font-bold lg:text-start text-center text-lg w-[90%]">
+                Featured Projects
+              </h3>
               <div className="w-[90%] border-[#2D2D2D] mx-auto rounded-full border-[3px]"></div>
             </div>
 
             {/* project section */}
             <div className="py-10 flex flex-col flex-wrap lg:flex-nowrap gap-3 h-[90%]">
-              
-              {/* project card 1 */}
+              {/* project card 4 */}
+              <div className="flex flex-col lg:flex-row-reverse items-center justify-center lg:w-[80%] sm:w-[60%] w-[80%] mx-auto lg:gap-20 gap-5 bg-white py-4 px-4 rounded-xl">
+                <img
+                  className="lg:w-[310px] w-full lg:h-[186px] rounded-xl "
+                  src="https://ik.imagekit.io/8fgpvoiai/project-image/tasty%20react_3ei89o_bi.png?updatedAt=1703787636712"
+                  alt="project1"
+                />
+
+                {/* right section */}
+                <div className="flex flex-col justify-center items-center lg:items-end gap-2 lg:w-[90%] w-full">
+                  {/* project title */}
+                  <h2 className="lg:text-4xl md:text-2xl text-lg font-bold text-center lg:text-end">
+                    <Link to={"https://tastyhubreact.netlify.app/"}>
+                      {" "}
+                      Tasty Hub Recipe Book
+                    </Link>
+                  </h2>
+
+                  {/* tags section */}
+                  <div className="flex lg:flex-row-reverse justify-center gap-4">
+                    <button className=" text-white bg-black flex justify-center items-center py-1 lg:px-6 px-4 lg:text-base text-sm text-center rounded-full font-bold">
+                      2023
+                    </button>
+                    <button className="text-[#8695A4] lg:text-lg text-base ">
+                      React + TheMealDB API
+                    </button>
+                  </div>
+
+                  {/* content */}
+                  <div className="lg:text-end text-center">
+                    Tasty Hub is a captivating web application built using
+                    React.js, offering a delightful culinary experience to
+                    users. Leveraging The Meal DB API, this project provides a
+                    seamless and user-friendly interface for exploring,
+                    discovering, and creating recipes. Whether you're a seasoned
+                    chef or a cooking enthusiast, Tasty Hub is designed to
+                    satisfy your culinary cravings.
+                  </div>
+                </div>
+              </div>
+
+              {/* project card 3 */}
               <div className="flex items-center lg:flex-row flex-col justify-center lg:w-[80%] sm:w-[60%] w-[80%] mx-auto lg:gap-20 gap-5 bg-white py-4 px-4 rounded-xl">
                 <img
                   className="lg:w-[310px] w-full lg:h-[186px] rounded-xl"
@@ -360,7 +413,7 @@ export default function ProjectLandingPage() {
                 </div>
               </div>
 
-              {/* project card 3 */}
+              {/* project card 1 */}
               <div className="flex lg:flex-row flex-col items-center justify-center lg:w-[80%] sm:w-[60%] w-[80%] mx-auto lg:gap-20 gap-5 bg-white py-4 px-4 rounded-xl">
                 <img
                   className="lg:w-[310px] w-full lg:h-[186px] rounded-xl"
@@ -420,7 +473,28 @@ export default function ProjectLandingPage() {
 
             {/* lower section */}
             <div className="flex flex-col gap-4 py-4">
-              {/* card 1 */}
+              {/* project 8 */}
+              <ProjectCard
+                flexDirection="flex-row-reverse"
+                className="items-end"
+                textAlign="text-end"
+                title={"Tasty Hub Recipe Book"}
+                imgUrl={
+                  "https://ik.imagekit.io/8fgpvoiai/project-image/tasty%20react_3ei89o_bi.png?updatedAt=1703787636712"
+                }
+                imgAlt="Tasty Hub Recipe Book"
+                projectUrl={"https://tastyhubreact.netlify.app/"}
+                year={2023}
+                projectTag={"React + TheMealDB API"}
+                projectContent={`Tasty Hub is a captivating web application built using
+                    React.js, offering a delightful culinary experience to
+                    users. Leveraging The Meal DB API, this project provides a
+                    seamless and user-friendly interface for exploring,
+                    discovering, and creating recipes. Whether you're a seasoned
+                    chef or a cooking enthusiast, Tasty Hub is designed to
+                    satisfy your culinary cravings.`}
+              />
+              {/* card 7 */}
 
               <ProjectCard
                 title="Artinest Blogging Platform"
@@ -441,7 +515,7 @@ export default function ProjectLandingPage() {
 
               <div className="w-[80%] border-[#E0E0E0] mx-auto rounded-full border"></div>
 
-              {/* card 2 */}
+              {/* card 6 */}
               <ProjectCard
                 flexDirection="flex-row-reverse"
                 className="items-end"
@@ -457,7 +531,7 @@ export default function ProjectLandingPage() {
 
               <div className="w-[80%] border-[#E0E0E0] mx-auto rounded-full border"></div>
 
-              {/* card 3 */}
+              {/* card 5 */}
               <ProjectCard
                 title="Context API Project"
                 imgUrl="https://ik.imagekit.io/8fgpvoiai/project-image/context%20api%20project_UWXtR-pvId.png?updatedAt=1703073323747"
@@ -488,7 +562,7 @@ export default function ProjectLandingPage() {
 
               <div className="w-[80%] border-[#E0E0E0] mx-auto rounded-full border"></div>
 
-              {/* card 5 */}
+              {/* card 3 */}
               <ProjectCard
                 title=" Currency Converter"
                 imgUrl="https://ik.imagekit.io/8fgpvoiai/project-image/currency%20converter_1GzrcBOof.png?updatedAt=1703073324040"
@@ -502,7 +576,7 @@ export default function ProjectLandingPage() {
 
               <div className="w-[80%] border-[#E0E0E0] mx-auto rounded-full border"></div>
 
-              {/* card 6 */}
+              {/* card 2 */}
               <ProjectCard
                 className="items-end"
                 textAlign="text-end"
@@ -519,7 +593,7 @@ export default function ProjectLandingPage() {
 
               <div className="w-[80%] border-[#E0E0E0] mx-auto rounded-full border"></div>
 
-              {/* card 7 */}
+              {/* card 1 */}
               <ProjectCard
                 title=" Background Color Changer"
                 imgUrl="https://ik.imagekit.io/8fgpvoiai/project-image/background%20project_JkJCfZ7_d.png?updatedAt=1703073323725"
@@ -712,6 +786,20 @@ export default function ProjectLandingPage() {
 
             {/* lower section */}
             <div className="flex flex-col gap-4 py-4 w-full">
+              <ProjectCard
+                flexDirection="flex-row-reverse"
+                className="items-end"
+                textAlign="text-end"
+                title={"Reciepe Website Design"}
+                imgUrl={
+                  "https://ik.imagekit.io/8fgpvoiai/project-image/Video_wLhep7fMuf.png?updatedAt=1703787245738"
+                }
+                imgAlt="Figma Design"
+                projectUrl="https://www.figma.com/file/USlCVjK5EZEgZC7RZiCKyR/Reciepe-Website-Design?type=design&node-id=96-2&mode=design&t=P5LT7DgCpcOs9Y6A-0"
+                year="2023"
+                projectTag="Figma"
+                projectContent="A Figma Design of Recipe Book Website"
+              />
               {/* card 1 agency landing page*/}
               <ProjectCard
                 title="Figma Design of Nike Landing page"
