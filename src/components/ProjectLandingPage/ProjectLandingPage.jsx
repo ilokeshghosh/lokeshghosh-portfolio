@@ -302,13 +302,13 @@ export default function ProjectLandingPage() {
             </div>
 
             {/* project section */}
-            <div className="py-10 flex flex-col flex-wrap lg:flex-nowrap gap-3 h-[90%]">
+            <div className="py-10 flex flex-col  flex-wrap lg:flex-nowrap gap-3 h-[90%]">
               {featuredProjects.map((item, index) => (
                 <div key={index}>
                   <ProjectCard
-                    className={index % 2 ? "items-end" : "items-start"}
-                    textAlign={index % 2 ? "text-end" : "text-start"}
-                    flexDirection={index % 2 ? "flex-row-reverse" : "flex-row"}
+                     className={index % 2 ? "items-end" : "items-start"}
+                     textAlign={index % 2 ? "text-end" : "text-start"}
+                     flexDirection={index % 2 ? "flex-row-reverse" : "flex-row"}
                     title={item.title}
                     imgUrl={item.imgUrl}
                     imgAlt={item.imgAlt}

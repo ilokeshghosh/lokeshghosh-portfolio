@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ProjectCard({
   className = "",
-  flexDirection = "flex-row",
+  flexDirection = "",
   textAlign='',
   title,
   imgUrl,
@@ -15,16 +15,16 @@ export default function ProjectCard({
   
   return (
     <div
-      className={`flex  flex-col items-center lg:${flexDirection} justify-center lg:w-[80%] sm:w-[60%] w-[80%] mx-auto lg:gap-20 gap-5 bg-white py-4 px-4 rounded-xl`}
+      className={`flex  flex-col items-center lg:${flexDirection} lg:flex-row justify-center lg:w-[80%] sm:w-[60%] w-[80%] mx-auto lg:gap-10 gap-5 bg-white py-4 px-4 rounded-xl`}
     >
       <img
-        className="lg:w-[310px] w-full lg:h-[186px] rounded-xl border border-[#8695A4]"
+        className="lg:w-[350px] w-full lg:h-[186px] rounded-xl border border-[#8695A4]"
         src={imgUrl}
         alt={imgAlt}
       />
 
       {/* right section */}
-      <div className={`flex   flex-col gap-2 lg:w-[90%] w-full lg:${className} lg:items-start items-center`}>
+      <div className={`flex   flex-col gap-2 lg:w-[90%] w-full lg:${className}  items-center`}>
         {/* project title */}
         <h2 className={`lg:text-4xl md:text-2xl text-xl text-center font-bold lg:text-start lg:${textAlign}`}>
           <Link className="w-full " to={projectUrl}>{title}</Link>
@@ -39,7 +39,7 @@ export default function ProjectCard({
         </div>
 
         {/* content */}
-        <div className={`lg:${textAlign} lg:text-start   text-center`}>{projectContent}</div>
+        <div className={`lg:${textAlign} lg:text-start  text-center`}>{projectContent}</div>
       </div>
     </div>
   );
