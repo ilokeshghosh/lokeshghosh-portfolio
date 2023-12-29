@@ -306,9 +306,6 @@ export default function ProjectLandingPage() {
               {featuredProjects.map((item, index) => (
                 <div key={index}>
                   <ProjectCard
-                     className={index % 2 ? "items-end" : "items-start"}
-                     textAlign={index % 2 ? "text-end" : "text-start"}
-                     flexDirection={index % 2 ? "flex-row-reverse" : "flex-row"}
                     title={item.title}
                     imgUrl={item.imgUrl}
                     imgAlt={item.imgAlt}
@@ -316,6 +313,7 @@ export default function ProjectLandingPage() {
                     projectTag={item.projectTag}
                     projectUrl={item.projectUrl}
                     year={item.year}
+                    index={index}
                   />
                 </div>
               ))}
@@ -344,9 +342,7 @@ export default function ProjectLandingPage() {
               {reactProjects.map((item, index) => (
                 <div key={index}>
                   <ProjectCard
-                    className={index % 2 ? "items-end" : "items-start"}
-                    textAlign={index % 2 ? "text-end" : "text-start"}
-                    flexDirection={index % 2 ? "flex-row-reverse" : "flex-row"}
+                    index={index}
                     title={item.title}
                     imgUrl={item.imgUrl}
                     imgAlt={item.imgAlt}
@@ -382,9 +378,7 @@ export default function ProjectLandingPage() {
               {jsProjects.map((item, index) => (
                 <div key={index}>
                   <ProjectCard
-                    className={index % 2 ? "items-end" : "items-start"}
-                    textAlign={index % 2 ? "text-end" : "text-start"}
-                    flexDirection={index % 2 ? "flex-row-reverse" : "flex-row"}
+                    index={index}
                     title={item.title}
                     imgUrl={item.imgUrl}
                     imgAlt={item.imgAlt}
@@ -417,13 +411,12 @@ export default function ProjectLandingPage() {
               <div className="w-[90%] border-[#2D2D2D] mx-auto rounded-full border-[3px]"></div>
             </div>
 
+            {/* lower section */}
             <div className="flex flex-col gap-4 py-4 w-full">
               {htmlCssProjects.map((item, index) => (
                 <div key={index}>
                   <ProjectCard
-                    className={index % 2 ? "items-end" : "items-start"}
-                    textAlign={index % 2 ? "text-end" : "text-start"}
-                    flexDirection={index % 2 ? "flex-row-reverse" : "flex-row"}
+                    index={index}
                     title={item.title}
                     imgUrl={item.imgUrl}
                     imgAlt={item.imgAlt}
@@ -459,9 +452,7 @@ export default function ProjectLandingPage() {
               {figmaProjects.map((item, index) => (
                 <div key={index}>
                   <ProjectCard
-                    className={index % 2 ? "items-end" : "items-start"}
-                    textAlign={index % 2 ? "text-end" : "text-start"}
-                    flexDirection={index % 2 ? "flex-row-reverse" : "flex-row"}
+                    index={index}
                     title={item.title}
                     imgUrl={item.imgUrl}
                     imgAlt={item.imgAlt}
