@@ -38,7 +38,7 @@ export default function ProjectLandingPage() {
       {/* wrapper*/}
       <div className="">
         {/* nav bar */}
-        <nav className="w-[100%]    bottom-0 lg:top-0  z-50 px-20 h-[10%] mx-auto lg:mx-0 flex items-center justify-center py-4 fixed bg-white">
+        <nav className="w-[100%]    bottom-0 lg:top-0  z-50 px-20 h-[10%] mx-auto lg:mx-0 flex items-center justify-center py-4 fixed backdrop-blur-3xl">
           {/* logo */}
 
           <a className="hidden lg:w-[40%] lg:inline-block" href="#home">
