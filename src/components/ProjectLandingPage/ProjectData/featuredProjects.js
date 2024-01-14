@@ -1,5 +1,15 @@
 const featuredProjects = [
     {
+        title: 'MoviePad: Where Information Meets Entertainment',
+        imgUrl: 'https://ik.imagekit.io/8fgpvoiai/project-image/moivepad%20project_6RcEWXBjb.png?updatedAt=1705214243930',
+        imgAlt: 'MoviePad',
+        projectUrl: 'https://moviepad.netlify.app/',
+        year: '2024',
+        projectTag: 'React + TMDB API + Postman',
+        projectContent: `Welcome to MoviePad, your ultimate destination for movie enthusiasts who crave the latest in entertainment. Built with React.js, MoviePad seamlessly integrates with The Movie Database (TMDb) API, offering a visually engaging and user-friendly interface. Let's explore the features that make MoviePad a unique experience!`
+
+    },
+    {
         title: 'Tasty Hub Recipe Book',
         imgUrl: 'https://ik.imagekit.io/8fgpvoiai/project-image/tasty%20react_3ei89o_bi.png?updatedAt=1703787636712',
         imgAlt: 'Tasty Hub Recipe Book',
@@ -30,24 +40,7 @@ const featuredProjects = [
         modification, email verification and advanced blog and
         username search capabilities.`
 
-    }, {
-        title: 'To-Do Application using React',
-        imgUrl: 'https://ik.imagekit.io/8fgpvoiai/project-image/react-todo-application_IKcr3divR.png?updatedAt=1700229585056',
-        imgAlt: 'To-Do Application using React',
-        projectUrl: 'https://lokesh-react-todo-project.netlify.app/',
-        year: '2023',
-        projectTag: 'React + Redux Tool Kit',
-        projectContent: `A Deployed React Project by using Redux Tool Kit`
-    }, {
-        title: 'JavaScript 30',
-        imgUrl: 'https://ik.imagekit.io/8fgpvoiai/project-image/js30_jqF4D2pFBp.png?updatedAt=1700229586132',
-        imgAlt: 'To-Do Application using React',
-        projectUrl: 'https://ilokeshghosh.github.io/javascript-30/index%20page/dist/',
-        year: '2023',
-        projectTag: 'HTML + CSS + JS',
-        projectContent: ` Mastering JS Skills By Doing One Project at a Time and
-        Elevating Web Wizardry 🧙‍♂️🪄`
-    }
+    },
 ]
 
-export {featuredProjects}
+export { featuredProjects }

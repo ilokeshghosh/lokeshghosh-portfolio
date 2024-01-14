@@ -1,5 +1,15 @@
 const reactProjects = [
     {
+        title: 'MoviePad: Where Information Meets Entertainment',
+        imgUrl: 'https://ik.imagekit.io/8fgpvoiai/project-image/moivepad%20project_6RcEWXBjb.png?updatedAt=1705214243930',
+        imgAlt: 'MoviePad',
+        projectUrl: 'https://moviepad.netlify.app/',
+        year: '2024',
+        projectTag: 'React + TMDB API + Postman',
+        projectContent: `Welcome to MoviePad, your ultimate destination for movie enthusiasts who crave the latest in entertainment. Built with React.js, MoviePad seamlessly integrates with The Movie Database (TMDb) API, offering a visually engaging and user-friendly interface. Let's explore the features that make MoviePad a unique experience!`
+
+    },
+    {
         title: 'Tasty Hub Recipe Book',
         imgUrl: 'https://ik.imagekit.io/8fgpvoiai/project-image/tasty%20react_3ei89o_bi.png?updatedAt=1703787636712',
         imgAlt: 'Tasty Hub Recipe Book',
@@ -80,4 +90,4 @@ const reactProjects = [
     }
 ]
 
-export {reactProjects}
+export { reactProjects }

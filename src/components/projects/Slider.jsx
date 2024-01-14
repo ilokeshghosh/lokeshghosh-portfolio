@@ -29,7 +29,7 @@ export default function Slider({ slides }) {
                             // slider content
                             <div className="w-full flex flex-col justify-center item-center  gap-2 mt-1">
                                 <div className="flex flex-wrap justify-center md:justify-start items-center gap-2">
-                                <h3 className="md:text-3xl text-xl font-semibold ">{slide.title}</h3>
+                                <h3 className="md:text-3xl text-xl font-semibold selection:bg-transparent">{slide.title}</h3>
                                 <Link className="text-orange-500 text-xl md:text-2xl" to={slide.url} target="_blank"><VscLiveShare/></Link>
                                 </div>
                                 <h4 className="md:text-xl text-lg md:text-start text-center font-base text-slate-500">{slide.desc}</h4>

@@ -1,5 +1,14 @@
 const figmaProjects = [
     {
+        title: "Movie Website UI Design",
+        imgUrl: "https://ik.imagekit.io/8fgpvoiai/project-image/movie%20application%20ui%20design__qBm9wpCK.png?updatedAt=1705215525785",
+        imgAlt: "Figma Design",
+        projectUrl: "https://www.figma.com/file/2ScaqHJAzPHYhtlqdlCwN4/moivePad?type=design&node-id=0%3A1&mode=design&t=qBgkIX5CZuEhzGce-1",
+        year: "2024",
+        projectTag: "Figma",
+        projectContent: "A Figma Design of a Movie Website"
+    },
+    {
         title: "Reciepe Website Design",
         imgUrl: "https://ik.imagekit.io/8fgpvoiai/project-image/Video_wLhep7fMuf.png?updatedAt=1703787245738",
 
