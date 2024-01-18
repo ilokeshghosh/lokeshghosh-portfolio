@@ -14,7 +14,8 @@ import { VscLiveShare } from "react-icons/vsc";
 import { MdOutlineConnectWithoutContact,MdOutlineFolderSpecial } from "react-icons/md"
 import { FaHtml5,FaCss3  } from "react-icons/fa";
 import { LuHome } from "react-icons/lu";
+import { SiPostman } from "react-icons/si";
 
 
 
-export { BiLogoInstagramAlt, BiHome, BsLinkedin, BsGithub, BsFacebook, BsCodeSlash, BsChatLeftText, PiUserList, GiCursedStar, GiBowman, GoProjectRoadmap, GrProjects, FiGrid, LiaBookSolid, FaReact, IoLogoJavascript, SiTailwindcss, BsGit, BiLogoMongodb, IoIosArrowBack, IoIosArrowForward, IoMdCheckmarkCircleOutline, VscLiveShare,FaFigma,SiAppwrite,IoIosArrowUp,MdOutlineConnectWithoutContact,FaHtml5,FaCss3,MdOutlineFolderSpecial,LuHome }
+export { BiLogoInstagramAlt, BiHome, BsLinkedin, BsGithub, BsFacebook, BsCodeSlash, BsChatLeftText, PiUserList, GiCursedStar, GiBowman, GoProjectRoadmap, GrProjects, FiGrid, LiaBookSolid, FaReact, IoLogoJavascript, SiTailwindcss, BsGit, BiLogoMongodb, IoIosArrowBack, IoIosArrowForward, IoMdCheckmarkCircleOutline, VscLiveShare,FaFigma,SiAppwrite,IoIosArrowUp,MdOutlineConnectWithoutContact,FaHtml5,FaCss3,MdOutlineFolderSpecial,LuHome,SiPostman }

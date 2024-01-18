@@ -5,7 +5,7 @@ import {
   BsGit,
   BiLogoMongodb,
   FaFigma,
-  SiAppwrite
+  SiAppwrite,SiPostman
 } from "../Logos/index.logos";
 export default function Skills() {
   return (
@@ -56,7 +56,13 @@ export default function Skills() {
 
         {/* content 7 */}
         <div className="border rounded-full md:py-8 py-6 px-6  flex flex-col md:gap-7 gap-5 justify-center items-center">
-          <FaFigma className="md:text-7xl text-5xl" />
+          <FaFigma className="md:text-7xl text-5xl text-[#F24E1E]" />
+          <h3 className="font-semibold text-orange-500">10%</h3>
+        </div>
+
+        {/* content 8 */}
+        <div className="border rounded-full md:py-8 py-6 px-6  flex flex-col md:gap-7 gap-5 justify-center items-center">
+          <SiPostman className="md:text-7xl text-5xl text-[#FF6C37]" />
           <h3 className="font-semibold text-orange-500">10%</h3>
         </div>
       </div>
