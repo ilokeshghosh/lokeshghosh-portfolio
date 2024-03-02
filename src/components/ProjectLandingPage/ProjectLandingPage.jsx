@@ -6,6 +6,7 @@ import {
   htmlCssProjects,
   figmaProjects,
   jsProjects,
+  muiProjects,
 } from "./ProjectData/index";
 
 import {
@@ -20,6 +21,11 @@ import {
   FaCss3,
   MdOutlineFolderSpecial,
   LuHome,
+  SiMui,
+  SiExpress,
+  SiReactquery,
+  SiRedux,
+  SiTypescript,
 } from "../../Logos/index.logos";
 
 import { ProjectCard } from "../";
@@ -32,13 +38,14 @@ export default function ProjectLandingPage() {
     js: false,
     htmlCss: false,
     figma: false,
+    mui: false,
   });
   return (
     <div className="overflow-y-auto no-scrollbar">
       {/* wrapper*/}
       <div className="">
         {/* nav bar */}
-        <nav className="w-[100%]    bottom-0 lg:top-0  z-50 px-20 h-[10%] mx-auto lg:mx-0 flex items-center justify-center py-4 fixed backdrop-blur-3xl">
+        <nav className="w-[100%]    bottom-0 lg:top-0  z-50 px-2 md:px-20 h-[10%] mx-auto lg:mx-0 flex items-center justify-center py-4 fixed backdrop-blur-3xl">
           {/* logo */}
 
           <a className="hidden lg:w-[40%] lg:inline-block" href="#home">
@@ -78,6 +85,7 @@ export default function ProjectLandingPage() {
                     js: false,
                     htmlCss: false,
                     figma: false,
+                    mui: false,
                   }));
                 }}
                 to={"/project-landing-page#featuredProject"}
@@ -104,6 +112,7 @@ export default function ProjectLandingPage() {
                     js: false,
                     htmlCss: false,
                     figma: false,
+                    mui: false,
                   }));
                 }}
                 to={"/project-landing-page#react"}
@@ -128,6 +137,7 @@ export default function ProjectLandingPage() {
                     js: true,
                     htmlCss: false,
                     figma: false,
+                    mui: false,
                   }));
                 }}
                 to={"/project-landing-page#js"}
@@ -152,6 +162,7 @@ export default function ProjectLandingPage() {
                     js: false,
                     htmlCss: true,
                     figma: false,
+                    mui: false,
                   }));
                 }}
                 to={"/project-landing-page#htmlCss"}
@@ -162,6 +173,31 @@ export default function ProjectLandingPage() {
                 }`}
               >
                 <FaHtml5 />
+              </HashLink>
+            </li>
+            <li>
+              <a className="lg:inline-block hidden" href="#mui">
+                MUI
+              </a>
+              <HashLink
+                smooth
+                onClick={(e) => {
+                  setHashLinkActive((prevState) => ({
+                    ...prevState,
+                    featuredProject: false,
+                    react: false,
+                    js: false,
+                    htmlCss: false,
+                    figma: false,
+                    mui: true,
+                  }));
+                }}
+                to={"/project-landing-page#mui"}
+                className={`transition-all lg:hidden duration-300 ease-linear ${
+                  hashLinkActive.mui ? "text-[#007FFF] text-3xl" : "text-2xl"
+                }`}
+              >
+                <SiMui />
               </HashLink>
             </li>
             <li>
@@ -178,6 +214,7 @@ export default function ProjectLandingPage() {
                     js: false,
                     htmlCss: false,
                     figma: true,
+                    mui: false,
                   }));
                 }}
                 to={"/project-landing-page#figma"}
@@ -225,7 +262,7 @@ export default function ProjectLandingPage() {
                   <h3 className="">
                     Hello, I'm Lokesh Ghosh, a recent graduate with a Bachelor's
                     in Computer Application. I'm currently immersed in learning
-                    React and MongoDB to expand my skills as a FullStack
+                    Typescript and Backend to expand my skills as a FullStack
                     Developer. My journey in web development is fueled by a
                     curiosity to create seamless and innovative digital
                     experiences.
@@ -281,6 +318,36 @@ export default function ProjectLandingPage() {
               <div className="flex flex-col justify-center gap-4 items-center">
                 <FaFigma className="lg:text-7xl text-4xl text-[#F24E1E]" />
                 <h3 className="font-semibold ">Figma</h3>
+              </div>
+
+              {/* skill8 */}
+              <div className="flex flex-col justify-center gap-4 items-center">
+                <SiMui className="lg:text-7xl text-4xl text-[#007FFF]" />
+                <h3 className="font-semibold ">MUI</h3>
+              </div>
+
+              {/* skill9 */}
+              <div className="flex flex-col justify-center gap-4 items-center">
+                <SiExpress className="lg:text-7xl text-4xl text-[#000000]" />
+                <h3 className="font-semibold ">Express</h3>
+              </div>
+
+              {/* skill10 */}
+              <div className="flex flex-col justify-center gap-4 items-center">
+                <SiReactquery className="lg:text-7xl text-4xl text-[#FF4154]" />
+                <h3 className="font-semibold text-center">React Query</h3>
+              </div>
+
+              {/* skill11 */}
+              <div className="flex flex-col justify-center gap-4 items-center">
+                <SiRedux className="lg:text-7xl text-4xl text-[#764ABC]" />
+                <h3 className="font-semibold ">Redux</h3>
+              </div>
+
+              {/* skill12 */}
+              <div className="flex flex-col justify-center gap-4 items-center">
+                <SiTypescript className="lg:text-7xl text-4xl text-[#3178C6]" />
+                <h3 className="font-semibold ">Typescript</h3>
               </div>
             </div>
 
@@ -414,6 +481,42 @@ export default function ProjectLandingPage() {
             {/* lower section */}
             <div className="flex flex-col gap-4 py-4 w-full">
               {htmlCssProjects.map((item, index) => (
+                <div key={index}>
+                  <ProjectCard
+                    index={index}
+                    title={item.title}
+                    imgUrl={item.imgUrl}
+                    imgAlt={item.imgAlt}
+                    projectContent={item.projectContent}
+                    projectTag={item.projectTag}
+                    projectUrl={item.projectUrl}
+                    year={item.year}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* mui wrapper */}
+          <div
+            id="mui"
+            className="py-24 h-screen  flex flex-col justify-start items-center gap-8"
+            style={{ fontFamily: "'Epilogue', sans-serif" }}
+          >
+            {/* upper section */}
+            <div className="flex flex-col justify-center items-start gap-2 w-full">
+              {/* name and logo */}
+              <div className="flex  lg:justify-start justify-center text-5xl lg:text-base gap-1 mx-auto items-center w-[90%]">
+                <SiMui className="text-[#007FFF] lg:text-3xl text-5xl animate-pulse" />
+                <h3 className="font-semibold ">MUI</h3>
+              </div>
+
+              <div className="w-[90%] border-[#2D2D2D] mx-auto rounded-full border-[3px]"></div>
+            </div>
+
+            {/* lower section */}
+            <div className="flex flex-col gap-4 py-20 w-full">
+              {muiProjects.map((item, index) => (
                 <div key={index}>
                   <ProjectCard
                     index={index}

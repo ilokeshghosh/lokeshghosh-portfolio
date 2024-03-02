@@ -78,19 +78,20 @@ export default function Form() {
             className="text-slate-300 outline-none font-bold  w-full  border-b-2 focus:top-7 border-slate-500 bg-transparent"
             rows={1}
             name="message"
+            placeholder="Have Ideas! Type Here"
           />
         </div>
 
         {/* submit button */}
         <input
-          className="px-4 py-2 bg-orange-500 border-2 border-orange-500 hover:bg-transparent hover:text-white text-black font-bold text-lg w-1/2 rounded-lg "
+          className="px-4 py-2 bg-orange-500 border-2 cursor-pointer border-orange-500 hover:bg-transparent hover:text-white text-black font-bold text-lg w-1/2 rounded-lg "
           type="submit"
           value="Send"
         />
       </div>
 
       {/* message section */}
-      <p className="bg-green-500 message hidden text-lg font-bold  items-center justify-center gap-3  text-slate-700 px-8 rounded-lg py-2">
+      <p className="bg-green-400 message hidden text-lg font-bold  items-center justify-center gap-3  text-slate-700 px-8 rounded-lg py-2">
         <IoMdCheckmarkCircleOutline className="text-white text-2xl" /> Message
         Sent Successfully
       </p>

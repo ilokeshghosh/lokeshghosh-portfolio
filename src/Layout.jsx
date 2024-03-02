@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { Card, Nav,NewCard } from "./components/index";
+import { Card, Nav, NewCard } from "./components/index";
 import { useState } from "react";
 import {
   BiLogoInstagramAlt,
@@ -88,7 +88,7 @@ function Layout() {
       {/* outlet wrapper */}
       <div className="flex justify-center items-start   gap-10 h-full px-4 md:py-[4rem] py-[2rem]  rounded text-white md:w-[78%] w-full ">
         {/* outlet */}
-        <div className="md:w-[90%]  w-full flex py-[1rem] justify-center items-center">
+        <div className="md:w-[90%] h-full  w-full flex justify-center items-center  overflow-y-auto no-scrollbar">
           <Outlet />
         </div>
 

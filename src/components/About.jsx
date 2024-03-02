@@ -18,9 +18,9 @@ export default function About() {
         <h4 className="text-slate-400 md:text-xl text-lg font-bold w-full">
           {" "}
           Hello, I'm Lokesh Ghosh, a recent graduate with a Bachelor's in
-          Computer Application. I'm currently immersed in learning React and
-          MongoDB to expand my skills as a FullStack Developer. My journey in
-          web development is fueled by a curiosity to create seamless and
+          Computer Application. I'm currently immersed in learning Typescript
+          and Backend to expand my skills as a FullStack Developer. My journey
+          in web development is fueled by a curiosity to create seamless and
           innovative digital experiences.
         </h4>
       </div>
