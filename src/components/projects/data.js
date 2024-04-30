@@ -1,5 +1,11 @@
 const SliderData = [
     {
+        title: 'LinkStore',
+        desc: 'Your digital playground where the web of links intertwines with boundless choices',
+        image: 'https://ik.imagekit.io/8fgpvoiai/Link%20Stock/documentation/Screenshot%202024-04-27%20122204_a1QD5LTp1.png?updatedAt=1714201249854',
+        url: 'https://github.com/ilokeshghosh/Link-stock-FullStack-App'
+    },
+    {
         title: 'Material UI Templates',
         desc: 'Collection of Material UI templates includes sign-in and sign-up pages, a blog, a checkout flow',
         image: 'https://ik.imagekit.io/8fgpvoiai/project-image/mui/mui%20projects_w_5MHe1JS.png?updatedAt=1709404720638',

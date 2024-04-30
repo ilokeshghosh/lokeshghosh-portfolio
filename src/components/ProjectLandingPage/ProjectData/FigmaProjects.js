@@ -1,5 +1,14 @@
 const figmaProjects = [
     {
+        title: "LinkStore Project UI Design",
+        imgUrl: "https://ik.imagekit.io/8fgpvoiai/project-image/Screenshot%202024-04-30%20200227_1bPhfR7g3O.png?updatedAt=1714487601297",
+        imgAlt: "Figma Design",
+        projectUrl: "https://www.figma.com/file/rdZooRylt3XZPabWEw7iAp/social-reference?type=design&mode=design&t=3fzahP4hJwHfLvwk-1",
+        year: "2024",
+        projectTag: "Figma",
+        projectContent: "A Figma Design for LinkStore Project"
+    },
+    {
         title: "Movie Website UI Design",
         imgUrl: "https://ik.imagekit.io/8fgpvoiai/project-image/movie%20application%20ui%20design__qBm9wpCK.png?updatedAt=1705215525785",
         imgAlt: "Figma Design",
@@ -28,4 +37,4 @@ const figmaProjects = [
     }
 ]
 
-export {figmaProjects}
+export { figmaProjects }

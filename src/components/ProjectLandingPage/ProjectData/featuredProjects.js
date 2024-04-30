@@ -1,5 +1,14 @@
 const featuredProjects = [
     {
+        title: 'LinkStore',
+        imgUrl: 'https://ik.imagekit.io/8fgpvoiai/Link%20Stock/documentation/Screenshot%202024-04-27%20122204_a1QD5LTp1.png?updatedAt=1714201249854',
+        projectUrl: 'https://github.com/ilokeshghosh/Link-stock-FullStack-App',
+        year: '2024',
+        projectTag: 'React + Redux + Postman',
+        projectContent: `Welcome to LinkStore, where online presence meets commerce seamlessly. Built on the MERN stack, LinkStore offers a dynamic and user-friendly interface. Customize your profile and integrate affiliate programs, showcase products, and share instantly. Join LinkStore for a unified hub of possibilities!`
+
+    },
+    {
         title: 'MoviePad: Where Information Meets Entertainment',
         imgUrl: 'https://ik.imagekit.io/8fgpvoiai/project-image/moivepad%20project_6RcEWXBjb.png?updatedAt=1705214243930',
         imgAlt: 'MoviePad',
